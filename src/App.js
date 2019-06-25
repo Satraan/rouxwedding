@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Icon } from 'semantic-ui-react'
+import { Card, Icon, Menu } from 'semantic-ui-react'
 
 import logo from './logo.svg';
 
@@ -14,11 +14,30 @@ function App() {
   return (
     <div className="App">
 
-    <div className="ui menu">
-      <h1>The Roux Wedding</h1>
-    </div>
 
     <Router>
+    <Menu>
+         <Menu.Item
+           name='Home'>
+            <Link to="/">
+              Home
+            </Link>
+         </Menu.Item>
+         <Menu.Item
+           name='Event Information'>
+            <Link to="/">
+              Event Information
+            </Link>
+         </Menu.Item>
+         <Menu.Item
+           name='Wedding Registry'>
+            <Link to="/registry">
+              Wedding Registry
+            </Link>
+         </Menu.Item>
+
+
+       </Menu>
 
           <Route exact path="/" component={Home} />
           <Route path="/registry" component={Registry} />
