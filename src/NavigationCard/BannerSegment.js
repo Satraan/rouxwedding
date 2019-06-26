@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const BannerSegment = (props) => {
 
   var sectionStyle = {
+    backgroundImage: "url(" + props.background + ")",
     backgroundSize: "cover",
     backgroundRepeat:"no-repeat",
     backgroundPosition:"center",
@@ -12,9 +13,7 @@ const BannerSegment = (props) => {
   };
 
   return (
-    <Item.Group divided>
-       <Item>
-         <Item.Image src={props.background} />
+       <Item style={sectionStyle}>
          <Item.Content verticalAlign="middle">
               <Item.Header>
                 <h2>{props.header}</h2>
@@ -24,7 +23,6 @@ const BannerSegment = (props) => {
               </Item.Description>
          </Item.Content>
        </Item>
-     </Item.Group>
   )
 }
 

@@ -5,6 +5,7 @@ import logo from './logo.svg';
 
 import Home from './Home/Home.js';
 import Registry from './Registry/Registry.js';
+import Information from './Information/Information.js';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
@@ -25,7 +26,7 @@ function App() {
          </Menu.Item>
          <Menu.Item
            name='Event Information'>
-            <Link to="/">
+            <Link to="/information">
               Event Information
             </Link>
          </Menu.Item>
@@ -41,6 +42,7 @@ function App() {
 
           <Route exact path="/" component={Home} />
           <Route path="/registry" component={Registry} />
+          <Route path="/information" component={Information} />
 
     </Router>
 
