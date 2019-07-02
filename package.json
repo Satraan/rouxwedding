@@ -6,7 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+<<<<<<< HEAD
     "next": "^8.1.0",
+=======
+    "google-maps-react": "^2.0.2",
+    "node-sass": "^4.12.0",
+>>>>>>> 4ef1badccb112adaae7f982f92a27831403ffc06
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
